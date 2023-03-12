@@ -27,6 +27,6 @@ void Dog::makeSound( void ) const {
 	std::cout << YEL << "Bark" << RES << std::endl;
 }
 
-Brain const	*Dog::getBrain( void ) const {
+Brain *Dog::getBrain( void ) const {
 	return this->_brain;
 }

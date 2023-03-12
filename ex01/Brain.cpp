@@ -2,7 +2,7 @@
 
 Brain::Brain( void ) {
 	for ( int i = 0; i < 100; i++ ) {
-		this->_ideas[i] = "idea #" + i;
+		this->_ideas[i] = "idea #" + std::to_string(i);
 	}
 	std::cout << "Brain Brain Brain" << std::endl;
 }
@@ -38,5 +38,5 @@ void Brain::setIdea( int i, std::string idea ) {
 		std::cout << RED << "No brain for you to set" << RES << std::endl;
 		return ;
 	}
-	this->_ideas[i] = idea;
+	this->_ideas[i] = idea + " #" + std::to_string(i);
 }

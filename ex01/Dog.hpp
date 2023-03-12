@@ -15,7 +15,7 @@ class Dog: public Animal
 
 		void	makeSound( void ) const;
 
-		Brain const	*getBrain( void ) const;
+		Brain	*getBrain( void ) const;
 
 	private:
 		Brain	*_brain;

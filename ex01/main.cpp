@@ -21,7 +21,22 @@ int main()
 	someCat->makeSound(); //will output the cat sound!
 	someDog->makeSound();
 
-	
+	std::cout << std::endl;
+
+	std::cout << YEL << "MESSAGE FROM BRAIN" << RES << std::endl;
+	std::cout << someCat->getBrain()->getIdea(5) << std::endl;
+	std::cout << YEL << "MESSAGE FROM CAT BRAIN" << RES << std::endl;
+	someCat->getBrain()->setIdea(5, "Cat Idea");
+	std::cout << someCat->getBrain()->getIdea(5) << std::endl;
+
+	std::cout << std::endl;
+
+	std::cout << YEL << "MESSAGE FROM BRAIN" << RES << std::endl;
+	std::cout << someCat->getBrain()->getIdea(99) << std::endl;
+	std::cout << YEL << "MESSAGE FROM DOG BRAIN" << RES << std::endl;
+	someCat->getBrain()->setIdea(99, "Not Cat Idea");
+	std::cout << someCat->getBrain()->getIdea(99) << std::endl;
+
 
 	std::cout << std::endl;
 

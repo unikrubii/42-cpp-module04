@@ -23,10 +23,10 @@ Cat &Cat::operator=( Cat const &rhs ) {
 	return *this;
 }
 
-void	Cat::makeSound( void ) const {
+void Cat::makeSound( void ) const {
 	std::cout << GRN << "Meow" << RES << std::endl;
 }
 
-Brain const	*Cat::getBrain( void ) const {
+Brain *Cat::getBrain( void ) const {
 	return this->_brain;
 }
