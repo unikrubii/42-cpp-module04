@@ -6,6 +6,8 @@
 # include "AMateria.hpp"
 # include "../color.hpp"
 
+class AMateria;
+
 class ICharacter
 {
 	public:
